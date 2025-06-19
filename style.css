@@ -12,8 +12,9 @@ body {
         url('img/team-bg.jpg'),
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-blend-mode: overlay;
-    background-size: cover;
+    background-size: auto;
     min-height: 100vh;
+    min-width: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -29,7 +30,6 @@ body {
     left: 0;
     z-index: 10;
     clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
-
 }
 
 .page-logo img {
@@ -46,6 +46,7 @@ nav {
     gap: 25px;
     align-items: center;
     justify-content: flex-end;
+    width: 100%;
 }
 
 a {
@@ -91,6 +92,7 @@ nav button:hover {
     flex: 1;
     display: flex;
     align-items: center;
+    width: 100%
 }
 
 .main-content .box-content {
@@ -120,6 +122,7 @@ nav button:hover {
     padding: 20px;
     margin: 0;
     color: whitesmoke;
+    width: 100%;
 }
 
 .buy-btn {
@@ -191,4 +194,14 @@ nav button:hover {
     font-size: 3rem;
     font-weight: bold;
     color:white;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 13px
+    }
+
+    .box-content h1 {
+        font-size: 3.4rem;
+    }
 }
